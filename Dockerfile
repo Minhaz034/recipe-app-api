@@ -17,10 +17,14 @@ RUN python -m venv /py && \
       then /py/bin/pip install -r /tmp/requirements.dev.txt ; \
     fi && \
     rm -rf /tmp && \
-    adduser \
+     adduser \
         --disabled-password \
         --no-create-home \
         django-user
+    # chown -R django-user:django-user /app/manage.py && \
+    # chmod +r /app/manage.py
+
+
 
 ENV PATH="/py/bin:$PATH"
 
