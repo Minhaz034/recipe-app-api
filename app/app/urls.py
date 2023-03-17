@@ -20,4 +20,3 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-random_variable=1
