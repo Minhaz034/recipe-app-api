@@ -6,4 +6,5 @@ Writing a simple calculator function
 def add(x,y):
     return x+y
 
-def sub
+def subtract(x,y):
+    return x-y
