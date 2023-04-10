@@ -21,10 +21,10 @@ RUN python -m venv /py && \
     fi && \
     rm -rf /tmp && \
     apk del .tmp-build-deps && \
-     adduser \
-        --disabled-password \
-        --no-create-home \
-        django-user
+    adduser \
+      --disabled-password \
+      --no-create-home \
+      django-user
     # chown -R django-user:django-user /app/manage.py && \
     # chmod +r /app/manage.py
 

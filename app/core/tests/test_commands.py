@@ -7,6 +7,17 @@ from django.core.management import call_command
 from django.db.utils import OperationalError
 from django.test import SimpleTestCase
 
+'''
+Mock class reolace real objects
+patch - override code for tests
+Django REST Framework APIClient is 
+ - based on Django's TestClient
+ - can make web requests
+ - check result
+ - override authentication
+'''
+
+
 @patch('core.management.commands.wait_for_db.Command.check')
 class CommandsTests(SimpleTestCase):
 
