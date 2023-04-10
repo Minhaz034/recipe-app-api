@@ -1,4 +1,4 @@
-"Django command to wait for the database to be available"
+"Django command to wait for the database to be available - Custom django management command"
 import time
 from psycopg2 import OperationalError as Psycopg2OpError
 from django.db.utils import OperationalError
