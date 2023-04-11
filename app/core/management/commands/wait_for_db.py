@@ -50,7 +50,7 @@ Psycopg2 is the package that you need to connect django to the database
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
-        self.stdout.write('Waiting for database')
+        self.stdout.write('Waiting for database...')
         db_up  = False
         while db_up is False:
             try:
