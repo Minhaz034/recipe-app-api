@@ -47,9 +47,6 @@ Psycopg2 is the package that you need to connect django to the database
     install psycopg2-binary : not good for prod
     psycopg2 : compiled from source , can be installed using pip,\
      more performance, dependencies need to be installed
-
-
-
 '''
 
 
